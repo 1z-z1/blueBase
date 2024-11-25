@@ -1,0 +1,47 @@
+solution "bgfx_project"
+    configurations {
+        "Debug",
+        "Release",
+    }
+    platforms {
+        "x64",
+    }
+
+project "bgfx_project"
+    kind "ConsoleApp"
+    language "C++"
+    files {
+        "src/*.cpp",
+        "src/*.h"
+    }
+    includedirs {
+        "3rdparty/bx/include",
+        "3rdparty/bgfx/include",
+        "3rdparty/bimg/include",
+        "3rdparty/ffmpeg"
+    }
+    libdirs {
+        "3rdparty/bgfx/.build/linux64_gcc/bin",
+        "3rdparty/ffmpeg"
+    }
+    links {
+        "glfw",
+        "GL",
+        "X11",
+        "pthread",
+        "dl",
+        "avcodec",
+        "avformat",
+        "avutil",
+        "swscale"
+    }
+
+    configuration "Release"
+        linkoptions {
+            "-L../3rdparty/bgfx/.build/linux64_gcc/bin -lbgfxRelease -lbimgRelease -lbxRelease"
+        }
+
+    configuration "Debug"
+        linkoptions {
+            "-L../3rdparty/bgfx/.build/linux64_gcc/bin -lbgfxDebug -lbimgDebug -lbxDebug"
+        }

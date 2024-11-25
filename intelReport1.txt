@@ -1,0 +1,102 @@
+Intelligence Report for Project: bgfx_project
+Generated: Sun Nov 24 08:21:18 PM PST 2024
+Report Number: 1 blueBaseGitHubEdit
+----------------------------------------
+
+[Project: bgfx_project] - 3rdparty Directory Structure (Depth 3)
+Information On More Files Available Upon Request
+./3rdparty
+├── bgfx
+│   ├── 3rdparty
+│   ├── bindings
+│   ├── CODEOWNERS
+│   ├── CONTRIBUTING.md
+│   ├── docs
+│   ├── examples
+│   ├── include
+│   ├── LICENSE
+│   ├── makefile
+│   ├── README.md
+│   ├── scripts
+│   ├── src
+│   └── tools
+├── bimg
+│   ├── 3rdparty
+│   ├── include
+│   ├── LICENSE
+│   ├── README.md
+│   ├── scripts
+│   ├── src
+│   └── tools
+├── bx
+│   ├── 3rdparty
+│   ├── include
+│   ├── LICENSE
+│   ├── README.md
+│   ├── scripts
+│   ├── src
+│   ├── tests
+│   └── tools
+└── genie
+    ├── bin
+    ├── build
+    ├── docs
+    ├── LICENSE
+    ├── makefile
+    ├── README.md
+    ├── scripts
+    ├── src
+    └── tests
+[Project: bgfx_project] - Backup Directory Structure (Depth 2)
+Backup Files Available Upon Request
+./bak
+└── blueBase
+    ├── build.sh.bak
+    ├── compile_shaders.sh.bak
+    ├── genie.lua.bak
+    ├── shaders.bak
+    │   └── otherShader
+    │       ├── compiled
+    │       ├── fs_example.sc
+    │       └── vs_example.sc
+    └── src.bak
+        ├── generated
+        └── main.cpp
+
+[Project: bgfx_project] - Main Project Structure (Depth 9)
+Reference Files Available Upon Request
+.
+├── bgfx_project
+├── bgfx_project.make
+├── build.sh
+├── compile_shaders.sh
+├── genie.lua
+├── intelReport1.txt
+├── intel.sh
+├── Makefile
+├── obj
+│   └── x64
+│       ├── Debug
+│       │   └── src
+│       │       ├── main.d
+│       │       └── main.o
+│       └── Release
+│           └── src
+│               ├── main.d
+│               └── main.o
+├── shaders
+│   └── otherShader
+│       ├── compiled
+│       ├── fs_example.sc
+│       └── vs_example.sc
+├── src
+│   ├── generated
+│   └── main.cpp
+└── test.mp4
+
+[Project: bgfx_project] - Source Files (.cpp, .h)
+Reference Files Available Upon Request
+./src/main.cpp
+
+[Project: bgfx_project] - Shader Files (.sc, .bin)
+Reference Files Available Upon Request
