@@ -19,8 +19,9 @@ then...
 ```
 ./build.sh
 ```
+
 -------------------------------------
-or if you want to do the build "manually" then enter...
+If you want to do the build "manually" then enter...
 ```
 ./build.sh clean-project-files
 ```
@@ -49,6 +50,7 @@ Then...
 ```
 To run the program.
 
+-------------------------------------
 Lastly if you would like to save a project you are working on you can do...
 ```
 ./build.sh backup [PROJECT NAME]
