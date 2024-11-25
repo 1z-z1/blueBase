@@ -43,7 +43,11 @@ Then you enter...
 ```
 make config=release64 
 ```
-and that should build 'bgfx_project'
+or
+```
+make config=debug64
+```
+and one those should build 'bgfx_project'
 
 Then...
 ```
