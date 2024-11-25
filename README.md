@@ -1,8 +1,10 @@
 ## bgfx_project - blueBase
+-------------------------------------
 <p align="center">
 <img src="https://github.com/1z-z1/blueBase/blob/main/readmepreviewpic.png" width="400" />
 </p>
 
+-------------------------------------
 To build whole project enter...
 ```
 ./build.sh
@@ -11,6 +13,7 @@ To run the program after this use
 ```
 ./bgfx_project
 ```
+-------------------------------------
 If you broke the project after the inital build enter...
 ```
 ./build.sh clean-project-files
@@ -19,7 +22,6 @@ then...
 ```
 ./build.sh
 ```
-
 -------------------------------------
 If you want to do the build "manually" then enter...
 ```
