@@ -116,3 +116,15 @@ make -j13
 cd ../..
 
 echo "Build completed!"
+
+echo "Restore blueBase Project Files"
+./build.sh restore blueBase
+
+echo "Generating GENie Project Files"
+./3rdparty/genie/bin/linux/genie gmake
+
+echo "Building bgfx_project with make"
+make config=release64 
+
+echo "Starting bgfx_project - blueBase"
+./bgfx_project
