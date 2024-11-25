@@ -4,8 +4,11 @@ To build whole project enter...
 ```
 ./build.sh
 ```
-
-If you need to restart after the inital build enter...
+To run the project after this use
+```
+./bgfx_project
+```
+If you broke the project after the inital build enter...
 ```
 ./build.sh clean-project-files
 ```
@@ -13,7 +16,7 @@ then...
 ```
 ./build.sh
 ```
-or if you want to do it manually then enter...
+or if you want to do the build "manually" then enter...
 ```
 ./build.sh restore blueBase
 ```
