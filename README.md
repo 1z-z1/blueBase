@@ -39,7 +39,14 @@ make config=release64
 ```
 and that should build 'bgfx_project'
 
-lastly 
+Then...
 ```
 ./bgfx_project
 ```
+To run the program.
+
+Lastly if you would like to save a project you are working on you can do...
+```
+./build.sh backup [PROJECT NAME]
+```
+to save it in the bak directory like blueBase.
