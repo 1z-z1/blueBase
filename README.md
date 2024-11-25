@@ -1,6 +1,6 @@
 # bgfx_project - blueBase
 <p align="center">
-<img src="https://github.com/1z-z1/blueBase/blob/main/readmepreviewpic.png" width="400" height="225" />
+<img src="https://github.com/1z-z1/blueBase/blob/main/readmepreviewpic.png" width="400" />
 </p>
 
 To build whole project enter...
