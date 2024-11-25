@@ -4,7 +4,7 @@
 </p>
 
 -------------------------------------
-To build whole project enter...
+To build the whole project enter...
 ```
 ./build.sh
 ```
