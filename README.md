@@ -1,7 +1,9 @@
 # bgfx_project - blueBase
 
 To build whole project enter...
-`./build.sh`
+```
+./build.sh
+```
 To run the project after this use
 ```
 ./bgfx_project
