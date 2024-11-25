@@ -1,4 +1,4 @@
-# bluebase
+# bgfx_project - blueBase
 
 To start enter...
 ```
