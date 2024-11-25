@@ -4,7 +4,7 @@ To build whole project enter...
 ```
 ./build.sh
 ```
-To run the project after this use
+To run the program after this use
 ```
 ./bgfx_project
 ```
