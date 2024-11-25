@@ -19,6 +19,7 @@ then...
 ```
 ./build.sh
 ```
+-------------------------------------
 or if you want to do the build "manually" then enter...
 ```
 ./build.sh clean-project-files
