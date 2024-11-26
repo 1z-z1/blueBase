@@ -61,3 +61,7 @@ Lastly if you would like to save a project you are working on you can do...
 ./build.sh backup [PROJECT NAME]
 ```
 to save it in the bak directory like blueBase.
+
+Note that if you do this you should be using the manual method of building.
+The build script can be modified to not restore blueBase and launch it everytime.
+I added that for first time ease of use.
