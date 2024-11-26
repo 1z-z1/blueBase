@@ -1,6 +1,10 @@
-# bgfx_project - blueBase
+## bgfx_project - blueBase
+<p align="center">
+<img src="https://github.com/1z-z1/blueBase/blob/main/readmepreviewpic.png" width="400" />
+</p>
 
-To build whole project enter...
+-------------------------------------
+To build the whole project enter...
 ```
 ./build.sh
 ```
@@ -8,6 +12,7 @@ To run the program after this use
 ```
 ./bgfx_project
 ```
+-------------------------------------
 If you broke the project after the inital build enter...
 ```
 ./build.sh clean-project-files
@@ -16,7 +21,8 @@ then...
 ```
 ./build.sh
 ```
-or if you want to do the build "manually" then enter...
+-------------------------------------
+If you want to do the build "manually" then enter...
 ```
 ./build.sh clean-project-files
 ```
@@ -37,7 +43,11 @@ Then you enter...
 ```
 make config=release64 
 ```
-and that should build 'bgfx_project'
+or
+```
+make config=debug64
+```
+and one those should build 'bgfx_project'
 
 Then...
 ```
@@ -45,6 +55,7 @@ Then...
 ```
 To run the program.
 
+-------------------------------------
 Lastly if you would like to save a project you are working on you can do...
 ```
 ./build.sh backup [PROJECT NAME]
