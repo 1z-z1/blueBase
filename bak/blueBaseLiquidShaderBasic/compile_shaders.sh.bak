@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# Create all required directories first
+mkdir -p shaders/liquid/compiled
+mkdir -p shaders/common
+
+# Get the absolute path to the project root
+PROJECT_ROOT=$(pwd)
+
+# Path to shaderc
+SHADERC="$PROJECT_ROOT/3rdparty/bgfx/.build/linux64_gcc/bin/shadercRelease"
+
+echo "Using shaderc from: $SHADERC"
+echo "Compiling liquid shaders..."
+
+# Create symlinks for shader includes
+echo "Setting up shader includes..."
+BGFX_SHADER_DIR="$PROJECT_ROOT/3rdparty/bgfx/src"
+ln -sf "$BGFX_SHADER_DIR/bgfx_shader.sh" shaders/common/
+ln -sf "$BGFX_SHADER_DIR/bgfx_compute.sh" shaders/common/
+ln -sf "$BGFX_SHADER_DIR/shaderlib.sh" shaders/common/
+ln -sf "$BGFX_SHADER_DIR/common.sh" shaders/common/
+
+# Verify includes
+echo "Verifying shader includes..."
+for include in bgfx_shader.sh bgfx_compute.sh shaderlib.sh common.sh; do
+    if [ -f "shaders/common/$include" ]; then
+        echo "Found $include: $(readlink "shaders/common/$include")"
+    else
+        echo "Warning: $include not found"
+    fi
+done
+
+# Compile vertex shader
+echo "Compiling vertex shader..."
+$SHADERC \
+    -f "$PROJECT_ROOT/shaders/liquid/vs_liquid.sc" \
+    -o "$PROJECT_ROOT/shaders/liquid/compiled/vs_liquid.bin" \
+    -i "$PROJECT_ROOT/shaders/common" \
+    -i "$BGFX_SHADER_DIR" \
+    --platform linux \
+    --type vertex \
+    -p 120 \
+    --verbose
+
+if [ $? -ne 0 ]; then
+    echo "Vertex shader compilation failed!"
+    exit 1
+fi
+
+# Compile fragment shader
+echo "Compiling fragment shader..."
+$SHADERC \
+    -f "$PROJECT_ROOT/shaders/liquid/fs_liquid.sc" \
+    -o "$PROJECT_ROOT/shaders/liquid/compiled/fs_liquid.bin" \
+    -i "$PROJECT_ROOT/shaders/common" \
+    -i "$BGFX_SHADER_DIR" \
+    --platform linux \
+    --type fragment \
+    -p 120 \
+    --verbose
+
+if [ $? -ne 0 ]; then
+    echo "Fragment shader compilation failed!"
+    exit 1
+fi
+
+echo "Shader compilation complete!"

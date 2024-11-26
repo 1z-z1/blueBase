@@ -1,0 +1,1 @@
+/home/iz_zi/Documents/git/clones/blueBase/3rdparty/bgfx/src/bgfx_compute.sh
