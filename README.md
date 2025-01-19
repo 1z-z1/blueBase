@@ -4,6 +4,9 @@
 </p>
 
 -------------------------------------
+Hey everyone, this is a bgfx base build that I used to get familar with the BGFX build system in a way that made sense to me. I hope in the future to share more things I have been working on related to this project but for now this is WYSIWYG.
+
+-------------------------------------
 To build the whole project enter...
 ```
 ./build.sh
