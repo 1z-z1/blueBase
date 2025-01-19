@@ -4,7 +4,13 @@
 </p>
 
 -------------------------------------
-Hey everyone, this is a Bgfx base build that I used to get familar with the Bgfx build system in a way that made sense to me. I hope in the future to share more things I have been working on related to this project but for now this is WYSIWYG.
+Hey Everyone, 
+
+This is a Bgfx base build that I used to get familar with the Bgfx build system in a way that made sense to me. 
+
+I hope in the future to share more things I have been working on related to this project but for now this is WYSIWYG.
+
+Enjoy~
 
 -------------------------------------
 To build the whole project enter...
